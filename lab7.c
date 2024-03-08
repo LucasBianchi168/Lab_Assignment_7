@@ -138,7 +138,7 @@ void main(void)
         printSwapCount(head1, array3[i]);
     }
     printf("%d\n\n", total);
-    clearLL(&head1);
+    head1 = clearLL(&head1);
 
     printf("array2 bubble sort\n\n");
     total = bubbleSort(array4, 9, &head2);
@@ -146,7 +146,7 @@ void main(void)
         printSwapCount(head2, array4[i]);
     }
     printf("%d\n\n", total);
-    clearLL(&head2);
+    head2 = clearLL(&head2);
 
     head1 = createLL(array1, 9);
     head2 = createLL(array2, 9);
@@ -157,7 +157,7 @@ void main(void)
         printSwapCount(head1, array1[i]);
     }
     printf("%d\n\n", total);
-    clearLL(&head1);
+    head1 = clearLL(&head1);
 
     printf("array2 selection sort\n\n");
     total = selectionSort(array2, 9, &head2);
@@ -165,5 +165,5 @@ void main(void)
         printSwapCount(head2, array2[i]);
     }
     printf("%d\n\n", total);
-    clearLL(&head2);
+    head2 = clearLL(&head2);
 }
